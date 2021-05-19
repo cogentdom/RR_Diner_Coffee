@@ -1,7 +1,15 @@
 # Database Key Mapper
 ---
-## Dat db
+## OPS database
+##### 1) ``` user:<user_email> ```
 
+##### 2) ``` client:<abrv> ```
+
+##### 3) ``` 78325bbf-831d-4090-9b46-5c9d54be9b1d ```
+
+<br><br>
+
+## DAT database
 ##### 1) ``` <abrv>:prod:<product_id>  ```
 ###### return type: &ensp; _hashset_  
 The keys & descriptions within returned hash
@@ -61,20 +69,31 @@ The keys & descriptions within returned hash
 
 <br>
 
-2) abrv:all
+2) ``` <abrv>:all ```
     - "202104"
     - "21"
     - "202105"
     - "5"
 
-4) abrv:cat:cat_name
+4) ``` <abrv>:cat:<cat_name> ```
     - "202104"
     - "1"
 
-6) abrv:merch:product_id
+6) ``` <abrv>:merch:<product_id> ```
     - Returns list of 10 product_id
 
-7) abrv:metrics
+7) ``` <abrv>:metrics ```
 
+
+<br><br>
+
+## MET database
+##### 1) ``` <abrv>:aov ```
+
+##### 2) ``` <abrv>:itm ```
+
+##### 3) ``` <abrv>:ordprod ```
+
+##### 4) ``` <abrv>:somenumber ```
 
 
