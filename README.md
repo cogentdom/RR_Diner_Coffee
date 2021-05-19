@@ -2,10 +2,81 @@
 ---
 ## OPS database
 ##### 1) ``` user:<user_email> ```
+###### return type: &ensp; _hashset_  
+The keys & descriptions within returned hash
+> 
+
+        - "client"
+              return type:      String
+              description:      admin or user depending on authorization 
+              
+        - "email"
+              return type:      String with email format
+              description:      Email for this employee 
+
+        - "password"
+              return type:      String
+              description:      Alpha numeric string working as placeholder for account password 
+
+<br>
 
 ##### 2) ``` client:<abrv> ```
+###### return type: &ensp; _hashset_  
+The keys & descriptions within returned hash
+> 
+
+        - "shopify_key"
+                return type:
+                description:
+                2) "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"
+        - "shopify_url"
+                return type:    String, url formatting
+                description:    The home page url on Shopify for this client
+
+        - "client"
+                return type:
+                description:
+                6) "Golftini"
+        - "auth"
+                return type:
+                description:
+                8) "aa7f8449-5d70-4eaf-bf9a-0c4368ce98b7"
+        - "shopify_secret"
+                return type:
+                description:
+                10) "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"
+        - "inventory"
+                return type:    Boolean (python)
+                description:    
+
+        - "notes"
+                return type:
+                description:
+                14) "Golftini Wear store"
+        - "abrv"
+                return type:    String of 4 characters
+                description:    The unique id used to refer to all subjects pertaining to this client
+
+<br>
 
 ##### 3) ``` 78325bbf-831d-4090-9b46-5c9d54be9b1d ```
+###### return type: &ensp; _hashset_  
+The keys & descriptions within returned hash
+> 
+
+        - "client"
+                return type:    String
+                description:    The company name of this client
+                
+        - "abrv"
+                return type:    String of 4 characters
+                description:    The unique id used to refer to all subjects pertaining to this client
+
+        - "auth_id"
+                return type:    String formatted as client:<abrv>
+                description:
+        
+        
 
 <br><br>
 
@@ -15,57 +86,57 @@
 The keys & descriptions within returned hash
 >
         
-    - handle:
-      return type:
-      description:
-      
-    - aspect
-      return type:
-      description:
-      
-    - price
-      return type:
-      description:
-      
-    - product_url
-      return type:
-      description:
-      
-    - image_url
-      return type:
-      description:
-      
-    - vendor
-      return type:
-      description:
-      
-    - inventory
-      return type:
-      description:
-      
-    - category
-      return type:
-      description:
-      
-    - inventory_url
-      return type:
-      description:
-      
-    - product_id
-      return type:
-      description:
-      
-    - inv_tracked
-      return type:    binary value 1 or 0
-      description:    If tracked Shopify has data on product's inventory quantities
-      
-    - active
-      return type:    binary value 1 or 0
-      description:    If active the product has more than 3 inventory
-      
-    - name
-      return type:    String 
-      description:    Name of product
+        - handle:
+                return type:
+                description:
+
+        - aspect
+                return type:
+                description:
+
+        - price
+                return type:
+                description:
+
+        - product_url
+                return type:
+                description:
+
+        - image_url
+                return type:
+                description:
+
+        - vendor
+                return type:
+                description:
+
+        - inventory
+                return type:
+                description:
+
+        - category
+                return type:
+                description:
+
+        - inventory_url
+                return type:
+                description:
+
+        - product_id
+                return type:
+                description:
+
+        - inv_tracked
+                return type:    binary value 1 or 0
+                description:    If tracked Shopify has data on product's inventory quantities
+
+        - active
+                return type:    binary value 1 or 0
+                description:    If active the product has more than 3 inventory
+
+        - name
+                return type:    String 
+                description:    Name of product
 
 <br>
 
@@ -88,12 +159,20 @@ The keys & descriptions within returned hash
 <br><br>
 
 ## MET database
+<!-- [viewed, opened, checkout, orders, selected, cart] -->
 ##### 1) ``` <abrv>:aov ```
+##### 1) ``` <abrv>:ordprod:agg ```
+##### 1) ``` <abrv>:<product_id>:agg ```
 
-##### 2) ``` <abrv>:itm ```
+
+##### 1) ``` <abrv>:<product_id>:them:aov ```
+##### 1) ``` <abrv>:<product_id>:us:aov ```
+##### 1) ``` <abrv>:<product_id>:them:itm ```
+##### 1) ``` <abrv>:<product_id>:us:itm ```
+
 
 ##### 3) ``` <abrv>:ordprod ```
 
-##### 4) ``` <abrv>:somenumber ```
+##### 4) ``` <abrv>:<month_id>:billing ```
 
 
