@@ -3,6 +3,7 @@
 ## OPS database
 ##### 1) ``` user:<user_email> ```
 ###### return type: &ensp; _hash_  
+###### description: &ensp; _ _
 The keys & descriptions within returned hash
 > 
 
@@ -20,8 +21,9 @@ The keys & descriptions within returned hash
 
 <br>
 
-##### 2) ``` client:<abrv> ```
+##### 2) ``` client:<client_abrv> ```
 ###### return type: &ensp; _hash_  
+###### description: &ensp; _ _
 The keys & descriptions within returned hash
 > 
 
@@ -59,8 +61,9 @@ The keys & descriptions within returned hash
 
 <br>
 
-##### 3) ``` <auth> ```
+##### 3) ``` <client_auth> ```
 ###### return type: &ensp; _hash_  
+###### description: &ensp; _ _
 The keys & descriptions within returned hash
 > 
 
@@ -81,32 +84,35 @@ The keys & descriptions within returned hash
 <br><br>
 
 ## DAT database
-##### 1) ``` <abrv>:all ```
-###### return type: &ensp; _hash_  
+##### 1) ``` <client_abrv>:all ``` 
+###### return type: &ensp; _hash_
+###### description: &ensp; _Client totals aggregated by month_
 The keys & descriptions within returned hash  
 _Number of Keys will vary based on time span working with client_ 
 >
 
-        - <%Y%m> or <YYYYmm>
+        - <yyyymm>
                 return type:    Integer
                 description:    Quantifty value
 
 <br> 
 
-##### 2) ``` <abrv>:cat:<cat_name> ```
+##### 2) ``` <client_abrv>:cat:<cat_name> ```
 ###### return type: &ensp; _hash_ 
+###### description: &ensp; _ _
 The keys & descriptions within returned hash  
 _Number of Keys will vary based on time span working with this category_ 
 >  
 
-        - <%Y%m> or <YYYYmm>
+        - <yyyymm>
                 return type:    Integer
                 description:    Quantifty value        
            
 <br>
 
-##### 3) ``` <abrv>:merch:<product_id> ```
+##### 3) ``` <client_abrv>:merch:<product_id> ```
 ###### return type: &ensp; _list_ 
+###### description: &ensp; _ _
 The keys & descriptions within returned hash
 > 
 
@@ -115,8 +121,9 @@ The keys & descriptions within returned hash
 
 <br>
 
-##### 4) ``` <abrv>:prod:<product_id>  ```
+##### 4) ``` <client_abrv>:prod:<product_id>  ```
 ###### return type: &ensp; _hash_  
+###### description: &ensp; _ _
 The keys & descriptions within returned hash
 >
         
@@ -174,8 +181,9 @@ The keys & descriptions within returned hash
 
 <br>
 
-##### 5) ``` <abrv>:metrics ```
+##### 5) ``` <client_abrv>:metrics ```
 ###### return type: &ensp; _hash_  
+###### description: &ensp; _ _
 The keys & descriptions within returned hash
 >
    
@@ -268,20 +276,20 @@ The keys & descriptions within returned hash
 
 ## MET database
 <!--  list of <metric>  [aov, itm] -->
-##### 2) ``` <abrv>:<metric> ```
+##### 2) ``` <client_abrv>:<metric> ```
 
-##### 3) ``` <abrv>:ordprod:agg ```
+##### 3) ``` <client_abrv>:ordprod:agg ```
 
-##### 3) ``` <abrv>:<%Y%m>:billing ```
+##### 3) ``` <client_abrv>:<yyyymm>:billing ```
 
-##### 3) ``` <abrv>:<%Y%m%d>:<metric> ```
-##### 3) ``` <abrv>:<%Y%m%d>:orders ```
+##### 3) ``` <client_abrv>:<yyyymmdd>:<metric> ```
+##### 3) ``` <client_abrv>:<yyyymmdd>:orders ```
 
 <!-- list of <action>   [viewed, opened, selected, cart, checkout] -->
-##### 4) ``` <abrv>:<%Y%m%d>:<session_id>:<action> ```
-##### 4) ``` <abrv>:<%Y%m%d>:<session_id>:orders ```
+##### 4) ``` <client_abrv>:<yyyymmdd>:<session_id>:<action> ```
+##### 4) ``` <client_abrv>:<yyyymmdd>:<session_id>:orders ```
 
 <!--  list of <who>     ['them', 'us'] -->
-##### 4) ``` <abrv>:<%Y%m%d>:<who>:<metric> ```
+##### 4) ``` <client_abrv>:<yyyymmdd>:<who>:<metric> ```
 
 
