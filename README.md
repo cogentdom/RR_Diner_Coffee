@@ -26,8 +26,8 @@ The keys & descriptions within returned hash
 > 
 
         - "shopify_key"
-                return type:
-                description:
+                return type:    String
+                description:    Used to c
                 2) "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"
         - "shopify_url"
                 return type:    String, url formatting
@@ -159,18 +159,24 @@ The keys & descriptions within returned hash
 <br><br>
 
 ## MET database
-<!-- [viewed, opened, checkout, orders, selected, cart] -->
 ##### 2) ``` <abrv>:aov ```
 ##### 2) ``` <abrv>:itm ```
 
 ##### 3) ``` <abrv>:ordprod:agg ```
-##### 3) ``` <abrv>:<month_id>:billing ```
-##### 3) ``` <abrv>:<day_id>:aov ```
-##### 3) ``` <abrv>:<day_id>:itm ```
-##### 3) ``` <abrv>:<day_id>:orders ```
 
-##### 4) ``` <abrv>:<day_id>:them:aov ```
-##### 4) ``` <abrv>:<day_id>:us:aov ```
-##### 4) ``` <abrv>:<day_id>:them:itm ```
-##### 4) ``` <abrv>:<day_id>:us:itm ```
+##### 3) ``` <abrv>:<%Y%m>:billing ```
+
+##### 3) ``` <abrv>:<%Y%m%d>:aov ```
+##### 3) ``` <abrv>:<%Y%m%d>:itm ```
+##### 3) ``` <abrv>:<%Y%m%d>:orders ```
+
+<!--list of <action> [viewed, opened, selected, cart, checkout] -->
+##### 4) ``` <abrv>:<%Y%m%d>:<session_id>:<action> ```
+##### 4) ``` <abrv>:<%Y%m%d>:<session_id>:orders ```
+
+##### 4) ``` <abrv>:<%Y%m%d>:them:aov ```
+##### 4) ``` <abrv>:<%Y%m%d>:us:aov ```
+
+##### 4) ``` <abrv>:<%Y%m%d>:them:itm ```
+##### 4) ``` <abrv>:<%Y%m%d>:us:itm ```
 
