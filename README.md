@@ -160,19 +160,17 @@ The keys & descriptions within returned hash
 
 ## MET database
 <!-- [viewed, opened, checkout, orders, selected, cart] -->
-##### 1) ``` <abrv>:aov ```
-##### 1) ``` <abrv>:ordprod:agg ```
-##### 1) ``` <abrv>:<product_id>:agg ```
+##### 2) ``` <abrv>:aov ```
+##### 2) ``` <abrv>:itm ```
 
+##### 3) ``` <abrv>:ordprod:agg ```
+##### 3) ``` <abrv>:<month_id>:billing ```
+##### 3) ``` <abrv>:<day_id>:aov ```
+##### 3) ``` <abrv>:<day_id>:itm ```
+##### 3) ``` <abrv>:<day_id>:orders ```
 
-##### 1) ``` <abrv>:<product_id>:them:aov ```
-##### 1) ``` <abrv>:<product_id>:us:aov ```
-##### 1) ``` <abrv>:<product_id>:them:itm ```
-##### 1) ``` <abrv>:<product_id>:us:itm ```
-
-
-##### 3) ``` <abrv>:ordprod ```
-
-##### 4) ``` <abrv>:<month_id>:billing ```
-
+##### 4) ``` <abrv>:<day_id>:them:aov ```
+##### 4) ``` <abrv>:<day_id>:us:aov ```
+##### 4) ``` <abrv>:<day_id>:them:itm ```
+##### 4) ``` <abrv>:<day_id>:us:itm ```
 
